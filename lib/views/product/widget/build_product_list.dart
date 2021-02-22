@@ -27,6 +27,13 @@ List<Widget> buildProductList(
     context: context,
     createButtonName: createButtonName,
     userId: userId,
+    type: 'add', //on top of product there should be Add buttom
+  );
+  buildProductRowHeader(
+    list: list,
+    context: context,
+    createButtonName: createButtonName,
+    userId: userId,
     type: 'reward', //on top of product there should be Add buttom
   );
 
@@ -102,13 +109,7 @@ List<Widget> buildProductList(
     }
   }
 
-  buildProductRowHeader(
-    list: list,
-    context: context,
-    createButtonName: createButtonName,
-    userId: userId,
-    type: 'add', //on top of product there should be Add buttom
-  );
+
 
   if (!showCreateItemOnTop) {
     buildProductRowHeader(
